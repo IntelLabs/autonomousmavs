@@ -56,7 +56,7 @@ Installation Instructions - Ubuntu 18.04 with ROS Melodic
   $ catkin build
   ```
 
- 4. Add sourcing to your `.bashrc` file
+ 4. Add sourcing
 
  ```
  $ source devel/setup.bash
@@ -121,4 +121,4 @@ Finally, the file  `ootp_ros/config/aero.yaml` is used to configure the paramete
 
 License
 ---------------------
-This project is licensed under the BSD-3-Clause see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the BSD-3-Clause see the [LICENSE](LICENSE) file for details
