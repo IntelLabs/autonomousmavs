@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="path_contour" type="path_contour_node" name="path_contour_node" output="screen" >
+      <rosparam command="load" file="$(find path_contour)/config/aero.yaml" />
+    </node>
+</launch>

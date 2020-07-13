@@ -1,0 +1,8 @@
+- git: {local-name: mav_comm, uri: 'https://github.com/ethz-asl/mav_comm.git'}
+- git: {local-name: mavros, uri: 'https://github.com/ethz-asl/mavros.git', version: 0880a97575f8c6b705096aca17ca04c6c6dcfc02}
+- git: {local-name: glog_catkin, uri: 'https://github.com/ethz-asl/glog_catkin.git'}
+- git: {local-name: mav_tools, uri: 'https://github.com/ethz-asl/mav_tools_public.git'}
+- git: {local-name: rotors_simulator, uri: 'https://github.com/ethz-asl/rotors_simulator.git', version: feature/gazebo9}
+- git: {local-name: catkin_simple, uri: 'https://github.com/catkin/catkin_simple.git'}
+- git: {local-name: realsense_gazebo_plugin, uri: 'https://github.com/SyrianSpock/realsense_gazebo_plugin.git'}
+- git: {local-name: autonomousmavs, uri: 'https://github.com/IntelLabs/autonomousmavs.git'}

@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="ootp_ros" type="ootp_node" name="ootp_node" output="screen" launch-prefix="gdb -ex run --args">
+      <rosparam command="load" file="$(find ootp_ros)/config/aero.yaml" />
+      <remap from="/depth/image_raw" to="/camera/depth/image_rect_raw"/>
+    </node>
+</launch>

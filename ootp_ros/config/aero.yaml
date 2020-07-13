@@ -1,0 +1,72 @@
+## this file correspond to aero parameters in real time experiments with D435 realsense camera
+
+## Parameters for OOTP
+# filter parameters
+path_gains: [ -3.0104536742267722,-9.257906132819208,-10.574352237875011,-5.326766977660398, 1.5 ]
+yaw_gains: [-3.0, -2.0]
+path_error: 0.1
+arc_velocity: 10.0
+waypoint_lengh: 0.2
+yaw_velocity: 2.0
+yaw_error: 0.05
+dynamics_iterations: 5
+dynamics_step_size: 0.005 #0.1
+
+# main params
+agent_radius: 0.18
+safe_radius_person: 0.1
+max_lost_turns: 3
+goal: [6.0, 0.5, 0.7]
+
+## Parameters for RLMAP
+
+## sensor params
+frame_width: 640
+frame_height: 480
+scale_factor: 1
+
+# correspond to typical fx and fy factors in projection matrix
+calibration_rfx: 387.1847839355469
+calibration_rfy: 387.1847839355469
+
+# correspond to typical cx and cy factors in projection matrix
+calibration_rpx: 323.66632080078125
+calibration_rpy: 244.58934020996094
+
+# transformation between camera and drone frame
+camera_translation: [0.08950079, 0.03418742, -0.05983145]
+#camera_rotation: [-0.033135,   0.149826,  0.988157,
+#  -0.998240,   0.043690,  -0.040098,
+#  -0.049181,  -0.987747,   0.148115]
+
+camera_rotation: [    -0.037295,   0.063168,   0.997306,
+  -0.998240,   0.043690,  -0.040098,
+  -0.046106,  -0.997047,   0.061428]
+
+# depth camera parameters
+min_depth_distance: 0.3
+max_depth_distance: 3.0
+depth_factor: 0.001
+
+# field of view of the sensor
+horizontal_fov: 2.22
+vertical_fov: 0.75
+
+# map parameters
+simple_probability: 0.0000001 ## gain 'g' of probability p{k+1} = p{k} + g(1-p{k})
+occupancy_threshold: 0.99
+#occupancy_threshold: 0.5
+voxel_leaf_size: 0.14
+map_size: 200
+image_percent: 0.0
+
+# rrt params
+rrt_informed_iteration: 1
+rrt_wall_time: 0.20
+rrt_angle: 2.2
+rrt_max: [6.5, 3.0, 0.75]
+rrt_min: [-0.1, -3.0, 0.69]
+
+## Debug Data
+log_files: /home/aero/
+debugging_msg: True

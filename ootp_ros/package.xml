@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package>
+  <name>ootp_ros</name>
+  <version>0.1.0</version>
+  <description>
+   A ros wrapper for autonomous micro-mav navigation.
+  </description>
+  <author>Leo Campos</author>
+  <maintainer email="leobardo.e.campos.macias@intel.com">Leo Campos</maintainer>
+  <license>BSD</license>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>cmake_modules</build_depend> <!-- for FindEigen.cmake module -->
+  <build_depend>roscpp</build_depend>
+  <build_depend>ootp</build_depend>
+  <build_depend>image_transport</build_depend>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>rlmap_ros</build_depend>
+    <build_depend>rrt_lib</build_depend>
+    
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>roscpp</run_depend>
+  <run_depend>ootp</run_depend>
+  <run_depend>image_transport</run_depend>
+  <run_depend>cv_bridge</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>rlmap_ros</run_depend>
+    <run_depend>rrt_lib</run_depend>
+  
+  
+</package>

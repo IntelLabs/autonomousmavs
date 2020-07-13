@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="ootp_simulator" type="ootp_gazebo" name="ootp_gazebo" output="screen" >
+      <rosparam command="load" file="$(find ootp_simulator)/config/simulation_maze.yaml" />
+    </node>
+</launch>

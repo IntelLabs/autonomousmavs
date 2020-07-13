@@ -1,0 +1,24 @@
+# filter parameters
+path_gains: [ -3.0104536742267722,-9.257906132819208,-10.574352237875011,-5.326766977660398, 1.5 ]
+#path_gains: [ -1.0,-8.0,-28.0,-56.0, -70.0, -56.0, -28.0, -8.0 ]
+yaw_gains: [-3.0, -2.0]
+path_error: 0.4
+arc_velocity: 10.0
+waypoint_lengh: 0.4
+yaw_velocity: 0.001
+yaw_error: 0.05
+
+dynamics_iterations: 1 #15
+
+position: [0.0, 0.0, 0.1]
+yaw: 0.0
+
+rho: 5.5
+y_rho: 1.0
+
+dtime: 0.001
+
+vmax: 0.5
+amax: 0.3
+gain: 0.9
+

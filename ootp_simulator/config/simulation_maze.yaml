@@ -1,0 +1,68 @@
+## this file correspond to simualtion parameters in RotorS gazebo world with R200 realsense camera plugin
+
+## Parameters for OOTP
+# filter parameters
+path_gains: [ -384.0, -400.0, -140.0, -20.0, 1.5 ]
+yaw_gains: [-1000.0, -250.0]
+path_error: 0.1
+arc_velocity: 10.0
+waypoint_lengh: 0.2
+yaw_velocity: 2.0
+yaw_error: 0.05
+dynamics_iterations: 5
+dynamics_step_size: 0.005 #0.1
+
+# main params
+agent_radius: 0.4
+agent_height: 0.1
+safe_radius_person: 0.5
+max_lost_turns: 3
+goal: [50.0, 50.0, 1.0]
+
+## Parameters for RLMAP
+
+## sensor params
+frame_width: 640
+frame_height: 480
+scale_factor: 1
+
+# correspond to typical fx and fy factors in projection matrix
+calibration_rfx: 463.8890075683594
+calibration_rfy: 463.8890075683594
+
+# correspond to typical cx and cy factors in projection matrix
+calibration_rpx: 320.0
+calibration_rpy: 240.0
+
+# transformation between camera and drone frame
+camera_translation: [0.0, -0.030, -0.061]
+camera_rotation: [0.00000,-0.19867,0.98007,
+                 -1.00000,-0.00000,0.00000,
+                  0.00000,-0.98007,-0.19867]
+
+# depth camera parameters
+min_depth_distance: 0.3
+max_depth_distance: 3.0
+depth_factor: 0.001
+
+# field of view of the sensor
+horizontal_fov: 2.22
+vertical_fov: 0.75
+
+# map parameters
+simple_probability: 0.0001 ## gain 'g' of probability p{k+1} = p{k} + g(1-p{k})
+occupancy_threshold: 0.99
+voxel_leaf_size: 0.2
+map_size: 200
+image_percent: 0.0
+
+# rrt params
+rrt_informed_iteration: 1
+rrt_wall_time: 0.20
+rrt_angle: 2.2
+rrt_max: [50.0, 50.0, 1.3]
+rrt_min: [-50.0, -50.0, 0.5]
+
+## Parameters for Simulation
+trajectory_rate: 0.01 #0.001
+debugging_msg: True
