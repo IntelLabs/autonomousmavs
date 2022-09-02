@@ -1,6 +1,13 @@
 Framework for Autonomous Navigation of Micro Aerial Vehicles
 ===============
 
+|         Authors        |                Email               |
+|:---------------------:|:----------------------------------:|
+| Leo Campos            | leobardo.e.campos.macias@intel.com |
+| Rafael de la Guardia  | rafael.de.la.guardia@intel.com    |
+|     **Lead Architect**     |              **Email**        |
+| Leo Campos            | leobardo.e.campos.macias@intel.com |
+
 This package provides the implementation of a framework for autonomous drone navigation towards a given goal within an unknown cluttered environment while fulfilling dynamical constraints.
 
 It can be simulated using [RotorS](https://github.com/ethz-asl/rotors_simulator) or implemented in actual drones. It has been fully tested on [Aero Ready to Fly Drone](https://www.intel.com/content/www/us/en/drones/aero-ready-to-fly-brief.html).
